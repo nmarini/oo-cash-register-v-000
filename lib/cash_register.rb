@@ -4,7 +4,7 @@ class CashRegister
 
   def initialize(total = 0, discount = 20)
     @total = total
-    @discount = Float(discount)
+    @discount = discount
     @@total << @total
   end
 
@@ -14,9 +14,9 @@ class CashRegister
   end
 
   def apply_discount
-    discount_total = @total / @discount
-
-    "After the discount, the total comes to #{discount_total}"
+    discount_total = @total * @discount
+    new_total = @total - discount_total
+    "After the discount, the total comes to #{new_total}"
   end
 
 
