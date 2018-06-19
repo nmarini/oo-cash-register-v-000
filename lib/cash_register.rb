@@ -18,7 +18,7 @@ class CashRegister
 
     "After the discount, the total comes to #{discount_total}"
   end
-    
+
 
 
 
