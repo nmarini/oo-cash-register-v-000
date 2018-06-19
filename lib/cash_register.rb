@@ -7,5 +7,8 @@ class CashRegister
     @discount = discount
     @@total << @total
   end
+  def discount
+    @discount
+  end
 
 end
